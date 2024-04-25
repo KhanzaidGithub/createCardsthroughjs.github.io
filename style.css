@@ -1,0 +1,93 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    min-height: 100vh;
+    background-color: #f0f0f0;
+  }
+  
+  .form-container {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    display: flex; /* Add display flex */
+  }
+  
+  .cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .card {
+    position: relative;
+    width: 350px;
+    margin: 20px;
+    overflow: hidden;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease;
+  }
+  
+  .card:hover {
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+  }
+  
+  .profile-pic {
+    width: 100%;
+    height: auto;
+    border-radius: 8px 8px 0 0;
+    transition: border-radius 0.5s ease;
+  }
+  
+  .card:hover .profile-pic {
+    border-radius: 50% 50% 0 0;
+  }
+  
+  .info {
+    position: absolute;
+    bottom: -100%;
+    left: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: #fff;
+    padding: 10px;
+    transition: bottom 0.5s ease;
+  }
+  
+  .card:hover .info {
+    bottom: 0;
+  }
+  .info .name{
+    font-size: 25px;
+  }
+  
+  /* Styles for form elements */
+  .form-container form {
+    padding: 20px;
+    display: flex; /* Add display flex */
+    flex-direction: column; /* Add flex direction */
+  }
+  
+  .form-container form input,
+  .form-container form textarea,
+  .form-container form button {
+    margin-bottom: 10px;
+    padding: 8px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+  }
+  
+  .form-container form button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .form-container form button:hover {
+    background-color: #0056b3;
+  }
+  

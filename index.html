@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>User Cards</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="form-container">
+        <form id="user-form">
+          <input type="text" id="name" name="name" placeholder="Enter Name">
+          <textarea id="description" name="description" placeholder="Enter Description"></textarea>
+          <input type="file" id="image" name="image" accept="image/*">
+          <button type="button" id="create-card-button">Create Card</button>
+        </form>
+      </div>
+      <br>
+      <br>
+
+<div class="cards-container" id="cards-container">
+  <div class="card">
+    <img class="profile-pic" src="./image/1.jpg" alt="Profile Picture">
+    <div class="info">
+      <div class="name">John Doe</div>
+      <div class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut condimentum dui vitae libero euismod, sed semper lorem pulvinar.</div>
+    </div>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
